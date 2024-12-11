@@ -38,7 +38,7 @@ export class Ball {
   bottomBorder = 0
 
   blur = 0
-  maxSpeed = 0.007
+  maxSpeed = 0.5
   accelDelta = 0.001
   // state = {}
 
@@ -95,8 +95,15 @@ export class Ball {
       this.accelY += this.accelDelta
     }
 
-    this.x += this.speedX + this.accelX
-    this.y += this.speedY + this.accelY
+    let speedX = this.speedX + this.accelX
+    let speedY = this.speedY + this.accelY
+    if(Math.abs(speedX) > this.maxSpeed)
+      speedX = this.maxSpeed * (speedX < 0 ? -1 : 1)
+    if(Math.abs(speedY) > this.maxSpeed)
+      speedY = this.maxSpeed * (speedY < 0 ? -1 : 1)
+
+    this.x += speedX
+    this.y += speedY
     this.elm.style.setProperty('--pos-x', this.x + 'px')
     this.elm.style.setProperty('--pos-y', this.y + 'px')
     

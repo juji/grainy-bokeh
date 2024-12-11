@@ -98,8 +98,16 @@ export class Ball {
       this.accelY += this.accelDelta
     }
 
-    this.x += Math.max(Math.min(this.speedX + this.accelX, this.maxSpeed), -this.maxSpeed)
-    this.y += Math.max(Math.min(this.speedY + this.accelY, this.maxSpeed), -this.maxSpeed)
+    this.x += Math.max(
+      Math.min(this.speedX + this.accelX, this.maxSpeed), 
+      -this.maxSpeed
+    )
+    
+    this.y += Math.max(
+      Math.min(this.speedY + this.accelY, this.maxSpeed), 
+      -this.maxSpeed
+    )
+    
     this.elm.style.setProperty('--pos-x', this.x + 'px')
     this.elm.style.setProperty('--pos-y', this.y + 'px')
     

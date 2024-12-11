@@ -15,6 +15,7 @@ const colors = [
   '#9980FA',
   '#ED4C67'
 ]
+
 function randomColor(){
   return colors[Math.floor(Math.random() * colors.length)];
 }

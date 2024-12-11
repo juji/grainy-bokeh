@@ -45,7 +45,9 @@ export class Ball {
   constructor(elm: HTMLDivElement){
 
     this.elm = elm
-    this.radius = 50 + Math.round((Math.random() * 300))
+
+    const smaller = Math.min(window.innerHeight, window.innerWidth)
+    this.radius = Math.round((smaller * 0.2 * Math.random())) + Math.round((Math.random() * 300))
     this.blur = 50 + Math.round(Math.random() * 200)
 
     this.x = Math.random() * window.innerHeight

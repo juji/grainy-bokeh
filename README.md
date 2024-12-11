@@ -11,3 +11,5 @@ for the grainy texture.
 ## Link
 
 https://grainy-bokeh.jujiplay.com
+
+Deployed in [Netlify](https://www.netlify.com/)

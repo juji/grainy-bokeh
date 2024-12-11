@@ -73,8 +73,8 @@ export class Ball {
   }
 
   onResize(){
-    this.rightBorder = window.innerWidth - this.radius
-    this.bottomBorder = window.innerHeight - this.radius
+    this.rightBorder = window.innerWidth - (this.radius * Math.random())
+    this.bottomBorder = window.innerHeight - (this.radius * Math.random())
   }
 
 

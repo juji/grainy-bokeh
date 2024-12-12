@@ -4,7 +4,11 @@
 
 checkout: https://grainy-gradients.vercel.app/
 
-for the grainy texture.
+For the grainy texture.
+
+checkout: https://github.com/baunov/gradients-bg
+
+For the lava-lamp effect.
 
 ## Link
 

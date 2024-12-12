@@ -35,17 +35,7 @@ header{
     svg{
       width: var(--logo-width);
       height: var(--logo-width);
-      path.logo-bg{
-        fill: black;
-        will-change: fill;
-      }
-      path.logo-fg{
-        fill: white;
-        will-change: fill;
-      }
     }
-
-    
   }
 }
 

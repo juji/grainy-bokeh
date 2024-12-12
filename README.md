@@ -1,14 +1,11 @@
 
 # Grainy Thing
 
+Grainy texture:
+https://grainy-gradients.vercel.app/
 
-checkout: https://grainy-gradients.vercel.app/
-
-For the grainy texture.
-
-checkout: https://github.com/baunov/gradients-bg
-
-For the lava-lamp effect.
+lava-lamp effect:
+https://github.com/baunov/gradients-bg
 
 ## Link
 

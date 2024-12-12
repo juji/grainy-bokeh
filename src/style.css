@@ -22,19 +22,20 @@ html, body, #app{
 }
 
 header{
-  --logo-width: 55px;
+  --logo-dim: 55px;
   position: fixed;
   top: 0;
   left: 0;
   z-index: 1;
-  height: var(--logo-width);
+  height: var(--logo-dim);
+  width: var(--logo-dim);
   a{
     display: block;
-    width: var(--logo-width);
-    height: var(--logo-width);
+    width: 100%;
+    height: 100%;
     svg{
-      width: var(--logo-width);
-      height: var(--logo-width);
+      width: 100%;
+      height: 100%;
     }
   }
 }

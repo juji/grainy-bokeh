@@ -45,11 +45,14 @@ footer{
   bottom: 0;
   left: 0;
   z-index: 1;
-  background-color: rgba(0,0,0,0.7);
-  padding: 0.5rem 1rem;
+  background-color: rgba(0,0,0,0.5);
+  padding: 0.7rem 1.2rem;
+  font-weight: bolder;
+  color: rgb(186, 255, 218);
   a {
-    color: rgb(186, 225, 255);
+    color: rgb(186, 255, 218);
   }
+  border-top-right-radius: 8px;
 }
 
 #app{

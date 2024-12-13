@@ -22,4 +22,12 @@ import { Ball } from './ball'
     jsBalls.forEach(ball => ball.onResize())
   })
 
+  const fullscreenBtn = document.querySelector('a.fullscreen')
+  fullscreenBtn?.addEventListener('click',() => {
+    const elem = document.documentElement;
+    if (elem.requestFullscreen) {
+      elem.requestFullscreen();
+    }
+  })
+
 })();

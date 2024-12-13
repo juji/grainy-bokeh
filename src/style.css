@@ -59,6 +59,17 @@ footer{
   border-top-right-radius: 8px;
 }
 
+a.fullscreen{
+  cursor: pointer;
+  text-decoration-line: underline;
+}
+
+:fullscreen {
+  header, footer{
+    display: none;
+  }
+}
+
 #grain{
 
   /* to prevent shadow on the edges of #balls we should put this here */

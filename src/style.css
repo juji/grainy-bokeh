@@ -65,6 +65,11 @@ a.fullscreen{
 }
 
 :fullscreen {
+
+  *{
+    cursor: none;
+  }
+
   header, footer{
     display: none;
   }

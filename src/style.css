@@ -21,8 +21,11 @@ html, body, #app, #grain, #balls{
   padding: 0;
 }
 
-body > svg {
-  display: none;
+body > svg.hidden {
+  height: 0;
+  width: 0;
+  position: absolute;
+  /* display: none; */
 }
 
 header{
@@ -106,6 +109,7 @@ a.fullscreen{
   --blur: 0px;
   
   filter: blur(var(--blur));
+  /* filter: blur(45px); */
   border-radius: 50%;
   mix-blend-mode: screen;
   display: block;
@@ -114,7 +118,7 @@ a.fullscreen{
   width: var(--width);
   height: var(--height);
 
-  background: rgb(var(--color));
+  /* background: rgba(var(--color),0.5); */
   background: radial-gradient(circle at center, rgba(var(--color), 0.7) 0%, rgba(var(--color), 0) 100%) no-repeat;
 
   top: var(--pos-y);

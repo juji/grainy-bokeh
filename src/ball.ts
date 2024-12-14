@@ -40,17 +40,17 @@ export class Ball {
 
   blur = 0
   maxSpeed = 2
-  accelDelta = 0.005
+  accelDelta = 0.05
   // state = {}
 
-  baseSpeed = 0.5
+  baseSpeed = 1
 
   constructor(elm: HTMLDivElement){
 
     this.elm = elm
 
     const smaller = Math.min(window.innerHeight, window.innerWidth)
-    this.radius = Math.round((smaller * 0.5) + (-25 + (Math.random() * 50)))
+    this.radius = Math.round((smaller * 0.5) + (-50 + (Math.random() * 150)))
     this.blur = 45 + Math.round(Math.random() * 50)
 
     this.x = Math.random() * window.innerWidth // / 2

@@ -38,7 +38,7 @@ export class Ball {
   rightBorder = 0
   bottomBorder = 0
 
-  blur = 0
+  // blur = 0
   maxSpeed = 2
   accelDelta = 0.05
   // state = {}
@@ -51,7 +51,7 @@ export class Ball {
 
     const smaller = Math.min(window.innerHeight, window.innerWidth)
     this.radius = Math.round((smaller * 0.5) + (-50 + (Math.random() * 150)))
-    this.blur = 45 + Math.round(Math.random() * 50)
+    // this.blur = 45 + Math.round(Math.random() * 50)
 
     this.x = Math.random() * window.innerWidth // / 2
     this.y = Math.random() * window.innerHeight // / 2
@@ -70,7 +70,7 @@ export class Ball {
     this.elm.style.setProperty('--color', this.color)
     this.elm.style.setProperty('--pos-x', this.x + 'px')
     this.elm.style.setProperty('--pos-y', this.y + 'px')
-    this.elm.style.setProperty('--blur', this.blur + 'px')
+    // this.elm.style.setProperty('--blur', this.blur + 'px')
 
     // do i want to save the state?
     // this.state = JSON.parse(JSON.stringify(this))

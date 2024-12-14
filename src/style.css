@@ -97,7 +97,7 @@ a.fullscreen{
   
   /* safari doesn't work */
   /* https://github.com/baunov/gradients-bg */
-  filter: url(#goo) blur(42px);
+  filter: url(#goo) blur(20px);
 }
 
 .ball{
@@ -109,7 +109,6 @@ a.fullscreen{
   --pos-y: '#000000';
   --blur: 0px;
   
-  /* filter: blur(var(--blur)); */
   filter: blur(75px);
   border-radius: 50%;
   mix-blend-mode: screen;

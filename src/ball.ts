@@ -51,7 +51,7 @@ export class Ball {
 
     const smaller = Math.min(window.innerHeight, window.innerWidth)
     this.radius = Math.round((smaller * 0.5) + (-25 + (Math.random() * 50)))
-    this.blur = 45 + Math.round(Math.random() * 40)
+    this.blur = 45 + Math.round(Math.random() * 50)
 
     this.x = Math.random() * window.innerWidth // / 2
     this.y = Math.random() * window.innerHeight // / 2

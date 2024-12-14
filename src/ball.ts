@@ -40,7 +40,7 @@ export class Ball {
 
   blur = 0
   maxSpeed = 2
-  accelDelta = 0.01
+  accelDelta = 0.005
   // state = {}
 
   baseSpeed = 0.5
@@ -50,11 +50,11 @@ export class Ball {
     this.elm = elm
 
     const smaller = Math.min(window.innerHeight, window.innerWidth)
-    this.radius = Math.round(smaller * 0.3 + (-25 + (Math.random() * 50)))
+    this.radius = Math.round((smaller * 0.5) + (-25 + (Math.random() * 50)))
     this.blur = 45 + Math.round(Math.random() * 40)
 
-    this.x = window.innerHeight / 2
-    this.y = window.innerWidth / 2
+    this.x = Math.random() * window.innerWidth // / 2
+    this.y = Math.random() * window.innerHeight // / 2
     this.color = randomColor()
 
     this.speedX = this.baseSpeed + Math.random() * (Math.random() < .5 ? 1 : -1)

@@ -4,7 +4,7 @@
 Grainy texture:
 https://grainy-gradients.vercel.app/
 
-lava-lamp effect (for non safari-based browser):
+lava-lamp effect (for non-safari based browser):
 https://github.com/baunov/gradients-bg
 
 ## Link

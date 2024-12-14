@@ -95,6 +95,8 @@ a.fullscreen{
   /* Tuning this on will add shadow to the frame */
   /* overflow: hidden; */
   
+  /* Turning this off */
+  /* since experience across browser are different */
   /* https://github.com/baunov/gradients-bg */
   /* filter: url(#goo) blur(20px); */
 }

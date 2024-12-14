@@ -4,8 +4,8 @@
 Grainy texture:
 https://grainy-gradients.vercel.app/
 
-lava-lamp effect:
-https://github.com/baunov/gradients-bg
+<!-- lava-lamp effect:
+https://github.com/baunov/gradients-bg -->
 
 ## Link
 

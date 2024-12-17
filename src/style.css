@@ -11,6 +11,7 @@
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  
 }
 
 html, body, #app, #grain, #balls{
@@ -81,6 +82,7 @@ a.fullscreen{
 
   /* to prevent shadow on the edges of #balls we should put this here */
   overflow: hidden;
+  
 
   /* https://grainy-gradients.vercel.app/ */
   filter: contrast(150%);
@@ -97,7 +99,11 @@ a.fullscreen{
   
   /* safari doesn't work */
   /* https://github.com/baunov/gradients-bg */
-  filter: url(#goo) blur(20px);
+  /* url(#goo)  */
+  filter: 
+    url(#goo)
+    blur(20px)
+    ;
 }
 
 .ball{
@@ -109,6 +115,7 @@ a.fullscreen{
   --pos-y: '#000000';
   --blur: 0px;
   
+  
   filter: blur(75px);
   border-radius: 50%;
   mix-blend-mode: screen;
@@ -119,7 +126,7 @@ a.fullscreen{
   height: var(--height);
 
   /* background: rgba(var(--color),0.5); */
-  background: radial-gradient(circle at center, rgba(var(--color), 0.5) 0%, rgba(var(--color), 0) 100%) no-repeat;
+  background: radial-gradient(circle at center, rgba(var(--color), 0.9) 0%, rgba(var(--color), 0) 100%) no-repeat;
 
   top: var(--pos-y);
   left: var(--pos-x);;

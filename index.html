@@ -22,13 +22,14 @@
     </header>
     <!-- https://github.com/baunov/gradients-bg -->
     <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-      <filter id="goo">
-        <feGaussianBlur stdDeviation="1" />
-        <feColorMatrix mode="matrix" 
+      <filter color-interpolation="linearRGB" id="goo">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+        <feColorMatrix in="blur" type="matrix" 
           values="1 0 0 0 0  
                   0 1 0 0 0  
                   0 0 1 0 0  
-                  0 0 0 4 -1" />
+                  0 0 0 3 -1" />
+        <!-- <feBlend in="SourceGraphic" in2="goo" mode="lighten" /> -->
       </filter>
     </svg>
     <div id="app">

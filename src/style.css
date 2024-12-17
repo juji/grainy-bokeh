@@ -89,7 +89,7 @@ a.fullscreen{
   background: 
     radial-gradient(circle at 50% 50%, rgba(0,0,0,.7), rgba(0,0,0,.6)),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 192 192' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='4.8' numOctaves='5' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E");
-
+    
 }
 
 #balls{
@@ -104,6 +104,8 @@ a.fullscreen{
     url(#goo)
     blur(20px)
     ;
+
+  
 }
 
 .ball{
@@ -116,9 +118,9 @@ a.fullscreen{
   --blur: 0px;
   
   
-  filter: blur(75px);
   border-radius: 50%;
   mix-blend-mode: screen;
+  filter: blur(75px);
   display: block;
   position: fixed;
   transform: translate3d(-50%, -50%, 0);
@@ -130,4 +132,18 @@ a.fullscreen{
 
   top: var(--pos-y);
   left: var(--pos-x);;
+}
+
+/* safari only */
+@supports (hanging-punctuation: first) and (font: -apple-system-body) and (-webkit-appearance: none) {
+
+  #balls{
+    filter: url(#goosafari);
+  }
+
+  .ball{
+    mix-blend-mode: plus-lighter;
+    filter: blur(75px);
+  }
+  
 }

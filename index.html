@@ -22,7 +22,7 @@
     </header>
     <!-- https://github.com/baunov/gradients-bg -->
     <svg xmlns="http://www.w3.org/2000/svg" class="hidden">
-      <filter color-interpolation="linearRGB" id="goo">
+      <filter id="goo">
         <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
         <feColorMatrix in="blur" type="matrix" 
           values="1 0 0 0 0  
@@ -30,6 +30,14 @@
                   0 0 1 0 0  
                   0 0 0 3 -1" />
         <!-- <feBlend in="SourceGraphic" in2="goo" mode="lighten" /> -->
+      </filter>
+      <filter id="goosafari">
+        <feGaussianBlur in="SourceGraphic" stdDeviation="1" result="blur" />
+        <feColorMatrix in="blur" type="matrix" values="1 0 0 0 0  
+                                                      0 1 0 0 0  
+                                                      0 0 1 0 0  
+                                                      0 0 0 20 -7" />
+        <feComposite in="blur" in2="goo" operator="in"/>
       </filter>
     </svg>
     <div id="app">

@@ -26,7 +26,6 @@ body > svg.hidden {
   height: 0;
   width: 0;
   position: absolute;
-  /* display: none; */
 }
 
 header{
@@ -85,7 +84,7 @@ a.fullscreen{
   
 
   /* https://grainy-gradients.vercel.app/ */
-  filter: contrast(150%);
+  filter: contrast(200%);
   background: 
     radial-gradient(circle at 50% 50%, rgba(0,0,0,.7), rgba(0,0,0,.6)),
     url("data:image/svg+xml,%3Csvg viewBox='0 0 277 277' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='noiseFilter'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='10' numOctaves='6' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23noiseFilter)'/%3E%3C/svg%3E")
@@ -99,11 +98,11 @@ a.fullscreen{
   /* overflow: hidden; */
   
   /* safari doesn't work */
+  /* there's a workaround below */
   /* https://github.com/baunov/gradients-bg */
-  /* url(#goo)  */
   filter: 
     url(#goo)
-    blur(20px)
+    blur(5px)
     ;
 
   
@@ -121,6 +120,7 @@ a.fullscreen{
   
   border-radius: 50%;
   mix-blend-mode: screen;
+  /* mix-blend-mode: color-dodge; */
   filter: blur(75px);
   display: block;
   position: fixed;
@@ -128,7 +128,6 @@ a.fullscreen{
   width: var(--width);
   height: var(--height);
 
-  /* background: rgba(var(--color),0.5); */
   background: radial-gradient(circle at center, rgba(var(--color), 0.9) 0%, rgba(var(--color), 0) 100%) no-repeat;
 
   top: var(--pos-y);
@@ -144,8 +143,7 @@ a.fullscreen{
 
   .ball{
     mix-blend-mode: plus-lighter;
-    /* mix-blend-mode: lighten; */
-    filter: blur(75px);
+    /* mix-blend-mode: color-dodge; */
   }
   
 }
